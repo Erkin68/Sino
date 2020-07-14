@@ -1,0 +1,1036 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.a
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-link:"Текст выноски";
+	font-family:"Tahoma","sans-serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body bgcolor="#002060" lang=RU>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The Independent JPEG
+Group's JPEG software</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>==========================================</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>README for release 8d
+of 15-Jan-2012</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>====================================</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>This distribution
+contains the eighth public release of the Independent JPEG</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Group's free JPEG
+software.&nbsp; You are welcome to redistribute this software and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>to use it for any
+purpose, subject to the conditions under LEGAL ISSUES, below.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>This software is the
+work of Tom Lane, Guido Vollbeding, Philip Gladstone,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Bill Allombert, Jim Boucher,
+Lee Crocker, Bob Friesenhahn, Ben Jackson,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Julian Minguillon, Luis
+Ortiz, George Phillips, Davide Rossi, Ge' Weijers,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>and other members of
+the Independent JPEG Group.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>IJG is not affiliated
+with the ISO/IEC JTC1/SC29/WG1 standards committee</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(also known as JPEG,
+together with ITU-T SG16).</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>DOCUMENTATION ROADMAP</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>=====================</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>This file contains the
+following sections:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>OVERVIEW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+General description of JPEG and the IJG software.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>LEGAL
+ISSUES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright, lack of warranty,
+terms of distribution.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>REFERENCES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Where to learn more about JPEG.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ARCHIVE
+LOCATIONS&nbsp;&nbsp; Where to find newer versions of this software.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ACKNOWLEDGMENTS&nbsp;&nbsp;&nbsp;&nbsp;
+Special thanks.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>FILE FORMAT
+WARS&nbsp;&nbsp;&nbsp; Software *not* to get.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>TO
+DO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Plans for future IJG releases.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Other documentation
+files in the distribution are:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>User documentation:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+install.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to configure and install
+the IJG software.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+usage.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usage instructions
+for cjpeg, djpeg, jpegtran,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rdjpgcom, and wrjpgcom.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+*.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Unix-style man pages for programs (same info as usage.txt).</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+wizard.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Advanced usage
+instructions for JPEG wizards only.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+change.log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Version-to-version change
+highlights.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Programmer and internal
+documentation:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+libjpeg.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to use the JPEG library in
+your own programs.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+example.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample code for
+calling the JPEG library.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+structure.txt&nbsp;&nbsp;&nbsp;&nbsp; Overview of the JPEG library's internal
+structure.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp; filelist.txt
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road map of IJG files.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;
+coderules.txt&nbsp;&nbsp;&nbsp;&nbsp; Coding style rules --- please read if you
+contribute code.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Please read at least
+the files install.txt and usage.txt.&nbsp; Some information</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>can also be found in
+the JPEG FAQ (Frequently Asked Questions) article. &nbsp;See</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ARCHIVE LOCATIONS below
+to find out where to obtain the FAQ article.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>If you want to
+understand how the JPEG code works, we suggest reading one or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>more of the REFERENCES,
+then looking at the documentation files (in roughly</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>the order listed)
+before diving into the code.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>OVERVIEW</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>========</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>This package contains C
+software to implement JPEG image encoding, decoding,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>and transcoding.&nbsp;
+JPEG (pronounced &quot;jay-peg&quot;) is a standardized compression</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>method for full-color
+and gray-scale images.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>This software
+implements JPEG baseline, extended-sequential, and progressive</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>compression
+processes.&nbsp; Provision is made for supporting all variants of these</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>processes, although
+some uncommon parameter settings aren't implemented yet.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We have made no
+provision for supporting the hierarchical or lossless</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>processes defined in
+the standard.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We provide a set of
+library routines for reading and writing JPEG image files,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>plus two sample
+applications &quot;cjpeg&quot; and &quot;djpeg&quot;, which use the library to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>perform conversion
+between JPEG and some other popular image file formats.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The library is intended
+to be reused in other applications.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>In order to support
+file conversion and viewing software, we have included</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>considerable functionality
+beyond the bare JPEG coding/decoding capability;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>for example, the color
+quantization modules are not strictly part of JPEG</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>decoding, but they are
+essential for output to colormapped file formats or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>colormapped
+displays.&nbsp; These extra functions can be compiled out of the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>library if not required
+for a particular application.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We have also included
+&quot;jpegtran&quot;, a utility for lossless transcoding between</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>different JPEG
+processes, and &quot;rdjpgcom&quot; and &quot;wrjpgcom&quot;, two simple</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>applications for
+inserting and extracting textual comments in JFIF files.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The emphasis in
+designing this software has been on achieving portability and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>flexibility, while also
+making it fast enough to be useful.&nbsp; In particular,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>the software is not
+intended to be read as a tutorial on JPEG.&nbsp; (See the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>REFERENCES section for
+introductory material.)&nbsp; Rather, it is intended to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>be reliable, portable,
+industrial-strength code.&nbsp; We do not claim to have</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>achieved that goal in
+every aspect of the software, but we strive for it.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We welcome the use of
+this software as a component of commercial products.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>No royalty is required,
+but we do ask for an acknowledgement in product</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>documentation, as
+described under LEGAL ISSUES.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>LEGAL ISSUES</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>============</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>In plain English:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>1. We don't promise
+that this software works. &nbsp;(But if you find any bugs,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp; please let
+us know!)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>2. You can use this
+software for whatever you want.&nbsp; You don't have to pay us.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>3. You may not pretend
+that you wrote this software.&nbsp; If you use it in a</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp; program,
+you must acknowledge somewhere in your documentation that</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp; you've
+used the IJG code.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>In legalese:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The authors make NO
+WARRANTY or representation, either express or implied,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>with respect to this
+software, its quality, accuracy, merchantability, or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>fitness for a
+particular purpose.&nbsp; This software is provided &quot;AS IS&quot;, and you,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>its user, assume the
+entire risk as to its quality and accuracy.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>This software is
+copyright (C) 1991-2012, Thomas G. Lane, Guido Vollbeding.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>All Rights Reserved
+except as specified below.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Permission is hereby
+granted to use, copy, modify, and distribute this</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>software (or portions
+thereof) for any purpose, without fee, subject to these</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>conditions:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(1) If any part of the
+source code for this software is distributed, then this</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>README file must be
+included, with this copyright and no-warranty notice</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>unaltered; and any
+additions, deletions, or changes to the original files</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>must be clearly
+indicated in accompanying documentation.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(2) If only executable
+code is distributed, then the accompanying</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>documentation must
+state that &quot;this software is based in part on the work of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>the Independent JPEG
+Group&quot;.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(3) Permission for use
+of this software is granted only if the user accepts</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>full responsibility for
+any undesirable consequences; the authors accept</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>NO LIABILITY for
+damages of any kind.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>These conditions apply
+to any software derived from or based on the IJG code,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>not just to the
+unmodified library.&nbsp; If you use our work, you ought to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>acknowledge us.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Permission is NOT
+granted for the use of any IJG author's name or company name</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>in advertising or
+publicity relating to this software or products derived from</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>it.&nbsp; This software
+may be referred to only as &quot;the Independent JPEG Group's</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>software&quot;.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We specifically permit
+and encourage the use of this software as the basis of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>commercial products,
+provided that all warranty or liability claims are</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>assumed by the product
+vendor.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ansi2knr.c is included
+in this distribution by permission of L. Peter Deutsch,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>sole proprietor of its
+copyright holder, Aladdin Enterprises of Menlo Park, CA.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ansi2knr.c is NOT
+covered by the above copyright and conditions, but instead</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>by the usual
+distribution terms of the Free Software Foundation; principally,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>that you must include
+source code if you redistribute it.&nbsp; (See the file</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ansi2knr.c for full
+details.)&nbsp; However, since ansi2knr.c is not needed as part</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>of any program
+generated from the IJG code, this does not limit you more than</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>the foregoing
+paragraphs do.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The Unix configuration
+script &quot;configure&quot; was produced with GNU Autoconf.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>It is copyright by the
+Free Software Foundation but is freely distributable.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The same holds for its
+supporting scripts (config.guess, config.sub,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ltmain.sh).&nbsp;
+Another support script, install-sh, is copyright by X Consortium</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>but is also freely
+distributable.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The IJG distribution
+formerly included code to read and write GIF files.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>To avoid entanglement
+with the Unisys LZW patent, GIF reading support has</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>been removed
+altogether, and the GIF writer has been simplified to produce</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&quot;uncompressed
+GIFs&quot;.&nbsp; This technique does not use the LZW algorithm; the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>resulting GIF files are
+larger than usual, but are readable by all standard</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>GIF decoders.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We are required to
+state that</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;
+&quot;The Graphics Interchange Format(c) is the Copyright property of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;
+CompuServe Incorporated.&nbsp; GIF(sm) is a Service Mark property of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;
+CompuServe Incorporated.&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>REFERENCES</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>==========</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We recommend reading
+one or more of these references before trying to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>understand the innards
+of the JPEG software.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The best short
+technical introduction to the JPEG compression algorithm is</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Wallace, Gregory K.&nbsp; &quot;The JPEG Still Picture Compression
+Standard&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Communications of the ACM, April 1991 (vol. 34 no. 4), pp. 30-44.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(Adjacent articles in
+that issue discuss MPEG motion picture compression,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>applications of JPEG,
+and related topics.)&nbsp; If you don't have the CACM issue</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>handy, a PostScript
+file containing a revised version of Wallace's article is</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>available at
+http://www.ijg.org/files/wallace.ps.gz.&nbsp; The file (actually</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>a preprint for an
+article that appeared in IEEE Trans. Consumer Electronics)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>omits the sample images
+that appeared in CACM, but it includes corrections</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>and some added
+material.&nbsp; Note: the Wallace article is copyright ACM and IEEE,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>and it may not be used
+for commercial purposes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>A somewhat less
+technical, more leisurely introduction to JPEG can be found in</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&quot;The Data
+Compression Book&quot; by Mark Nelson and Jean-loup Gailly, published by</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>M&amp;T Books (New
+York), 2nd ed. 1996, ISBN 1-55851-434-1.&nbsp; This book provides</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>good explanations and
+example C code for a multitude of compression methods</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>including JPEG.&nbsp;
+It is an excellent source if you are comfortable reading C</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>code but don't know
+much about data compression in general.&nbsp; The book's JPEG</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>sample code is far from
+industrial-strength, but when you are ready to look</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>at a full
+implementation, you've got one here...</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The best currently
+available description of JPEG is the textbook &quot;JPEG Still</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Image Data Compression
+Standard&quot; by William B. Pennebaker and Joan L.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Mitchell, published by
+Van Nostrand Reinhold, 1993, ISBN 0-442-01272-1.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Price US$59.95, 638
+pp.&nbsp; The book includes the complete text of the ISO JPEG</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>standards (DIS 10918-1
+and draft DIS 10918-2).</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Although this is by far
+the most detailed and comprehensive exposition of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>JPEG publicly
+available, we point out that it is still missing an explanation</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>of the most essential
+properties and algorithms of the underlying DCT</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>technology.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>If you think that you
+know about DCT-based JPEG after reading this book,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>then you are in
+delusion.&nbsp; The real fundamentals and corresponding potential</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>of DCT-based JPEG are
+not publicly known so far, and that is the reason for</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>all the mistaken
+developments taking place in the image coding domain.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The original JPEG
+standard is divided into two parts, Part 1 being the actual</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>specification, while
+Part 2 covers compliance testing methods.&nbsp; Part 1 is</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>titled &quot;Digital
+Compression and Coding of Continuous-tone Still Images,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Part 1: Requirements
+and guidelines&quot; and has document numbers ISO/IEC IS</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>10918-1, ITU-T
+T.81.&nbsp; Part 2 is titled &quot;Digital Compression and Coding of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Continuous-tone Still
+Images, Part 2: Compliance testing&quot; and has document</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>numbers ISO/IEC IS
+10918-2, ITU-T T.83.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>IJG JPEG 8 introduces
+an implementation of the JPEG SmartScale extension</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>which is specified in
+two documents:&nbsp; A contributed document at ITU and ISO</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>with title &quot;ITU-T
+JPEG-Plus Proposal for Extending ITU-T T.81 for Advanced</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Image Coding&quot;,
+April 2006, Geneva, Switzerland.&nbsp; The latest version of this</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>document is Revision
+3.&nbsp; And a contributed document ISO/IEC JTC1/SC29/WG1 N</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>5799 with title
+&quot;Evolution of JPEG&quot;, June/July 2011, Berlin, Germany.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The JPEG standard does
+not specify all details of an interchangeable file</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>format.&nbsp; For the
+omitted details we follow the &quot;JFIF&quot; conventions, revision</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>1.02.&nbsp; JFIF 1.02
+has been adopted as an Ecma International Technical Report</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>and thus received a
+formal publication status.&nbsp; It is available as a free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>download in PDF format
+from</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>http://www.ecma-international.org/publications/techreports/E-TR-098.htm.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>A PostScript version of
+the JFIF document is available at</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>http://www.ijg.org/files/jfif.ps.gz.&nbsp;
+There is also a plain text version at</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>http://www.ijg.org/files/jfif.txt.gz,
+but it is missing the figures.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The TIFF 6.0 file
+format specification can be obtained by FTP from</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ftp://ftp.sgi.com/graphics/tiff/TIFF6.ps.gz.&nbsp;
+The JPEG incorporation scheme</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>found in the TIFF 6.0
+spec of 3-June-92 has a number of serious problems.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>IJG does not recommend
+use of the TIFF 6.0 design (TIFF Compression tag 6).</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Instead, we recommend
+the JPEG design proposed by TIFF Technical Note #2</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(Compression tag
+7).&nbsp; Copies of this Note can be obtained from</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>http://www.ijg.org/files/.&nbsp;
+It is expected that the next revision</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>of the TIFF spec will
+replace the 6.0 JPEG design with the Note's design.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Although IJG's own code
+does not support TIFF/JPEG, the free libtiff library</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>uses our library to
+implement TIFF/JPEG per the Note.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ARCHIVE LOCATIONS</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>=================</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The
+&quot;official&quot; archive site for this software is www.ijg.org.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The most recent
+released version can always be found there in</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>directory
+&quot;files&quot;.&nbsp; This particular version will be archived as</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>http://www.ijg.org/files/jpegsrc.v8d.tar.gz,
+and in Windows-compatible</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&quot;zip&quot; archive
+format as http://www.ijg.org/files/jpegsr8d.zip.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The JPEG FAQ
+(Frequently Asked Questions) article is a source of some</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>general information
+about JPEG.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>It is available on the
+World Wide Web at http://www.faqs.org/faqs/jpeg-faq/</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>and other news.answers
+archive sites, including the official news.answers</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>archive at
+rtfm.mit.edu: ftp://rtfm.mit.edu/pub/usenet/news.answers/jpeg-faq/.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>If you don't have Web
+or FTP access, send e-mail to mail-server@rtfm.mit.edu</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>with body</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+send usenet/news.answers/jpeg-faq/part1</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+send usenet/news.answers/jpeg-faq/part2</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='color:white'>ACKNOWLEDGMENTS</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>===============</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Juergen Bruder
+for providing me with a copy of the common DCT</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>algorithm article, only
+to find out that I had come to the same result</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>in a more direct and
+comprehensible way with a more generative approach.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Istvan
+Sebestyen and Joan L. Mitchell for inviting me to the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ITU JPEG (Study Group
+16) meeting in Geneva, Switzerland.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Thomas Wiegand
+and Gary Sullivan for inviting me to the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Joint Video Team (MPEG
+&amp; ITU) meeting in Geneva, Switzerland.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Thomas Richter
+and Daniel Lee for inviting me to the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>ISO/IEC JTC1/SC29/WG1
+(also known as JPEG, together with ITU-T SG16)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>meeting in Berlin,
+Germany.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to John Korejwa
+and Massimo Ballerini for inviting me to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>fruitful consultations
+in Boston, MA and Milan, Italy.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Hendrik
+Elstner, Roland Fassauer, Simone Zuck, Guenther</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Maier-Gerber, Walter
+Stoeber, Fred Schmitz, and Norbert Braunagel</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>for corresponding
+business development.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Nico Zschach
+and Dirk Stelling of the technical support team</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>at the Digital Images
+company in Halle for providing me with extra</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>equipment for
+configuration tests.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Richard F.
+Lyon (then of Foveon Inc.) for fruitful</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>communication about
+JPEG configuration in Sigma Photo Pro software.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Thank to Andrew
+Finkenstadt for hosting the ijg.org site.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Last but not least
+special thank to Thomas G. Lane for the original</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>design and development
+of this singular software package.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>FILE FORMAT WARS</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>================</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>The ISO/IEC
+JTC1/SC29/WG1 standards committee (also known as JPEG, together</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>with ITU-T SG16)
+currently promotes different formats containing the name</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&quot;JPEG&quot; which
+is misleading because these formats are incompatible with</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>original DCT-based JPEG
+and are based on faulty technologies.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>IJG therefore does not
+and will not support such momentary mistakes</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(see REFERENCES).</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>There exist also
+distributions under the name &quot;OpenJPEG&quot; promoting such</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>kind of formats which
+is misleading because they don't support original</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>JPEG images.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We have no sympathy for
+the promotion of inferior formats.&nbsp; Indeed, one of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>the original reasons
+for developing this free software was to help force</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>convergence on common,
+interoperable format standards for JPEG files.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Don't use an
+incompatible file format!</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>(In any case, our
+decoder will remain capable of reading existing JPEG</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>image files
+indefinitely.)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Furthermore, the ISO
+committee pretends to be &quot;responsible for the popular</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>JPEG&quot; in their
+public reports which is not true because they don't respond to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>actual requirements for
+the maintenance of the original JPEG specification.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>There are currently
+distributions in circulation containing the name</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&quot;libjpeg&quot;
+which claim to be a &quot;derivative&quot; or &quot;fork&quot; of the original</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>libjpeg, but don't have
+the features and are incompatible with formats</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>supported by actual IJG
+libjpeg distributions.&nbsp; Furthermore, they</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>violate the license
+conditions as described under LEGAL ISSUES above.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>We have no sympathy for
+the release of misleading and illegal</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>distributions derived
+from obsolete code bases.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Don't use an obsolete
+code base!</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>TO DO</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>=====</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Version 8 is the first
+release of a new generation JPEG standard</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>to overcome the
+limitations of the original JPEG specification.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>More features are being
+prepared for coming releases...</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'>Please send bug
+reports, offers of help, etc. to jpeg-info@jpegclub.org.</span></p>
+
+</div>
+
+</body>
+
+</html>

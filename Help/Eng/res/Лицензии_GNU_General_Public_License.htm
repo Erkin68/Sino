@@ -1,0 +1,1271 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.a
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-link:"Текст выноски";
+	font-family:"Tahoma","sans-serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body bgcolor="#002060" lang=RU>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                    GNU GENERAL PUBLIC LICENSE</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                       Version 2, June 1991</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'> Copyright (C) 1989, 1991 Free Software Foundation, Inc.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                          675 Mass Ave, Cambridge, MA 02139, USA</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'> Everyone is permitted to copy and distribute verbatim copies</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'> of this license document, but changing it is not allowed.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                            Preamble</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  The licenses for most software are designed to take away your</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>freedom to share and change it.  By contrast, the GNU General
+Public</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>License is intended to guarantee your freedom to share and change
+free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>software--to make sure the software is free for all its users. 
+This</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>General Public License applies to most of the Free Software</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Foundation's software and to any other program whose authors
+commit to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>using it.  (Some other Free Software Foundation software is
+covered by</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the GNU Library General Public License instead.)  You can apply it
+to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>your programs, too.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  When we speak of free software, we are referring to freedom, not</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>price.  Our General Public Licenses are designed to make sure that
+you</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>have the freedom to distribute copies of free software (and charge
+for</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>this service if you wish), that you receive source code or can get
+it</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>if you want it, that you can change the software or use pieces of
+it</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>in new free programs; and that you know you can do these things.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  To protect your rights, we need to make restrictions that forbid</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>anyone to deny you these rights or to ask you to surrender the
+rights.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>These restrictions translate to certain responsibilities for you
+if you</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribute copies of the software, or if you modify it.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  For example, if you distribute copies of such a program, whether</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>gratis or for a fee, you must give the recipients all the rights
+that</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>you have.  You must make sure that they, too, receive or can get
+the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>source code.  And you must show them these terms so they know
+their</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>rights.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  We protect your rights with two steps: (1) copyright the
+software, and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>(2) offer you this license which gives you legal permission to
+copy,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribute and/or modify the software.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  Also, for each author's protection and ours, we want to make
+certain</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>that everyone understands that there is no warranty for this free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>software.  If the software is modified by someone else and passed
+on, we</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>want its recipients to know that what they have is not the
+original, so</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>that any problems introduced by others will not reflect on the
+original</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>authors' reputations.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  Finally, any free program is threatened constantly by software</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>patents.  We wish to avoid the danger that redistributors of a
+free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>program will individually obtain patent licenses, in effect making
+the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>program proprietary.  To prevent this, we have made it clear that
+any</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>patent must be licensed for everyone's free use or not licensed at
+all.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  The precise terms and conditions for copying, distribution and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>modification follow.</span></p>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+color:white'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                    GNU GENERAL PUBLIC LICENSE</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  0. This License applies to any program or other work which
+contains</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>a notice placed by the copyright holder saying it may be
+distributed</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>under the terms of this General Public License.  The
+&quot;Program&quot;, below,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>refers to any such program or work, and a &quot;work based on the
+Program&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>means either the Program or any derivative work under copyright
+law:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>that is to say, a work containing the Program or a portion of it,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>either verbatim or with modifications and/or translated into
+another</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>language.  (Hereinafter, translation is included without
+limitation in</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the term &quot;modification&quot;.)  Each licensee is addressed as
+&quot;you&quot;.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Activities other than copying, distribution and modification are
+not</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>covered by this License; they are outside its scope.  The act of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>running the Program is not restricted, and the output from the
+Program</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>is covered only if its contents constitute a work based on the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Program (independent of having been made by running the Program).</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Whether that is true depends on what the Program does.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  1. You may copy and distribute verbatim copies of the Program's</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>source code as you receive it, in any medium, provided that you</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>conspicuously and appropriately publish on each copy an
+appropriate</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>copyright notice and disclaimer of warranty; keep intact all the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>notices that refer to this License and to the absence of any
+warranty;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>and give any other recipients of the Program a copy of this
+License</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>along with the Program.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>You may charge a fee for the physical act of transferring a copy,
+and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>you may at your option offer warranty protection in exchange for a
+fee.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  2. You may modify your copy or copies of the Program or any
+portion</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>of it, thus forming a work based on the Program, and copy and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribute such modifications or work under the terms of Section 1</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>above, provided that you also meet all of these conditions:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    a) You must cause the modified files to carry prominent
+notices</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    stating that you changed the files and the date of any change.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    b) You must cause any work that you distribute or publish,
+that in</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    whole or in part contains or is derived from the Program or
+any</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    part thereof, to be licensed as a whole at no charge to all
+third</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    parties under the terms of this License.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    c) If the modified program normally reads commands
+interactively</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    when run, you must cause it, when started running for such</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    interactive use in the most ordinary way, to print or display
+an</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    announcement including an appropriate copyright notice and a</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    notice that there is no warranty (or else, saying that you
+provide</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    a warranty) and that users may redistribute the program under</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    these conditions, and telling the user how to view a copy of
+this</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    License.  (Exception: if the Program itself is interactive but</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    does not normally print such an announcement, your work based
+on</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    the Program is not required to print an announcement.)</span></p>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+color:white'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>These requirements apply to the modified work as a whole.  If</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>identifiable sections of that work are not derived from the
+Program,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>and can be reasonably considered independent and separate works in</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>themselves, then this License, and its terms, do not apply to
+those</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>sections when you distribute them as separate works.  But when you</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribute the same sections as part of a whole which is a work
+based</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>on the Program, the distribution of the whole must be on the terms
+of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>this License, whose permissions for other licensees extend to the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>entire whole, and thus to each and every part regardless of who
+wrote it.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Thus, it is not the intent of this section to claim rights or
+contest</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>your rights to work written entirely by you; rather, the intent is
+to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>exercise the right to control the distribution of derivative or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>collective works based on the Program.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>In addition, mere aggregation of another work not based on the
+Program</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>with the Program (or with a work based on the Program) on a volume
+of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>a storage or distribution medium does not bring the other work
+under</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the scope of this License.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  3. You may copy and distribute the Program (or a work based on
+it,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>under Section 2) in object code or executable form under the terms
+of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Sections 1 and 2 above provided that you also do one of the
+following:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    a) Accompany it with the complete corresponding machine-readable</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    source code, which must be distributed under the terms of
+Sections</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    1 and 2 above on a medium customarily used for software
+interchange; or,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    b) Accompany it with a written offer, valid for at least three</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    years, to give any third party, for a charge no more than your</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    cost of physically performing source distribution, a complete</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    machine-readable copy of the corresponding source code, to be</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    distributed under the terms of Sections 1 and 2 above on a
+medium</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    customarily used for software interchange; or,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    c) Accompany it with the information you received as to the
+offer</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    to distribute corresponding source code.  (This alternative is</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    allowed only for noncommercial distribution and only if you</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    received the program in object code or executable form with
+such</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    an offer, in accord with Subsection b above.)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>The source code for a work means the preferred form of the work
+for</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>making modifications to it.  For an executable work, complete
+source</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>code means all the source code for all modules it contains, plus
+any</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>associated interface definition files, plus the scripts used to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>control compilation and installation of the executable.  However,
+as a</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>special exception, the source code distributed need not include</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>anything that is normally distributed (in either source or binary</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>form) with the major components (compiler, kernel, and so on) of
+the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>operating system on which the executable runs, unless that
+component</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>itself accompanies the executable.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>If distribution of executable or object code is made by offering</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>access to copy from a designated place, then offering equivalent</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>access to copy the source code from the same place counts as</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribution of the source code, even though third parties are not</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>compelled to copy the source along with the object code.</span></p>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+color:white'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  4. You may not copy, modify, sublicense, or distribute the
+Program</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>except as expressly provided under this License.  Any attempt</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>otherwise to copy, modify, sublicense or distribute the Program is</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>void, and will automatically terminate your rights under this
+License.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>However, parties who have received copies, or rights, from you
+under</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>this License will not have their licenses terminated so long as
+such</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>parties remain in full compliance.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  5. You are not required to accept this License, since you have
+not</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>signed it.  However, nothing else grants you permission to modify
+or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribute the Program or its derivative works.  These actions are</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>prohibited by law if you do not accept this License.  Therefore,
+by</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>modifying or distributing the Program (or any work based on the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Program), you indicate your acceptance of this License to do so,
+and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>all its terms and conditions for copying, distributing or
+modifying</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the Program or works based on it.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  6. Each time you redistribute the Program (or any work based on
+the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Program), the recipient automatically receives a license from the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>original licensor to copy, distribute or modify the Program
+subject to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>these terms and conditions.  You may not impose any further</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>restrictions on the recipients' exercise of the rights granted
+herein.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>You are not responsible for enforcing compliance by third parties
+to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>this License.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  7. If, as a consequence of a court judgment or allegation of
+patent</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>infringement or for any other reason (not limited to patent
+issues),</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>conditions are imposed on you (whether by court order, agreement
+or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>otherwise) that contradict the conditions of this License, they do
+not</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>excuse you from the conditions of this License.  If you cannot</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>distribute so as to satisfy simultaneously your obligations under
+this</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>License and any other pertinent obligations, then as a consequence
+you</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>may not distribute the Program at all.  For example, if a patent</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>license would not permit royalty-free redistribution of the
+Program by</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>all those who receive copies directly or indirectly through you,
+then</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the only way you could satisfy both it and this License would be
+to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>refrain entirely from distribution of the Program.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>If any portion of this section is held invalid or unenforceable
+under</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>any particular circumstance, the balance of the section is
+intended to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>apply and the section as a whole is intended to apply in other</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>circumstances.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>It is not the purpose of this section to induce you to infringe
+any</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>patents or other property right claims or to contest validity of
+any</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>such claims; this section has the sole purpose of protecting the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>integrity of the free software distribution system, which is</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>implemented by public license practices.  Many people have made</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>generous contributions to the wide range of software distributed</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>through that system in reliance on consistent application of that</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>system; it is up to the author/donor to decide if he or she is
+willing</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>to distribute software through any other system and a licensee
+cannot</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>impose that choice.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>This section is intended to make thoroughly clear what is believed
+to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>be a consequence of the rest of this License.</span></p>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+color:white'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  8. If the distribution and/or use of the Program is restricted
+in</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>certain countries either by patents or by copyrighted interfaces,
+the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>original copyright holder who places the Program under this
+License</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>may add an explicit geographical distribution limitation excluding</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>those countries, so that distribution is permitted only in or
+among</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>countries not thus excluded.  In such case, this License
+incorporates</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the limitation as if written in the body of this License.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  9. The Free Software Foundation may publish revised and/or new
+versions</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>of the General Public License from time to time.  Such new
+versions will</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>be similar in spirit to the present version, but may differ in
+detail to</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>address new problems or concerns.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Each version is given a distinguishing version number.  If the
+Program</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>specifies a version number of this License which applies to it and
+&quot;any</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>later version&quot;, you have the option of following the terms
+and conditions</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>either of that version or of any later version published by the
+Free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Software Foundation.  If the Program does not specify a version
+number of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>this License, you may choose any version ever published by the
+Free Software</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Foundation.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  10. If you wish to incorporate parts of the Program into other
+free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>programs whose distribution conditions are different, write to the
+author</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>to ask for permission.  For software which is copyrighted by the
+Free</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Software Foundation, write to the Free Software Foundation; we
+sometimes</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>make exceptions for this.  Our decision will be guided by the two
+goals</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>of preserving the free status of all derivatives of our free
+software and</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>of promoting the sharing and reuse of software generally.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                            NO WARRANTY</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. 
+EXCEPT WHEN</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
+PARTIES</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>PROVIDE THE PROGRAM &quot;AS IS&quot; WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE
+RISK AS</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD
+THE</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY
+SERVICING,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>REPAIR OR CORRECTION.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO
+IN WRITING</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR
+DAMAGES,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL
+DAMAGES ARISING</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT
+LIMITED</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES
+SUSTAINED BY</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH
+ANY OTHER</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF
+THE</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>POSSIBILITY OF SUCH DAMAGES.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>                     END OF TERMS AND CONDITIONS</span></p>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+color:white'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>        Appendix: How to Apply These Terms to Your New Programs</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  If you develop a new program, and you want it to be of the greatest</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>possible use to the public, the best way to achieve this is to
+make it</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>free software which everyone can redistribute and change under
+these terms.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  To do so, attach the following notices to the program.  It is
+safest</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>to attach them to the start of each source file to most
+effectively</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>convey the exclusion of warranty; and each file should have at
+least</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>the &quot;copyright&quot; line and a pointer to where the full
+notice is found.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    &lt;one line to give the program's name and a brief idea of
+what it does.&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    Copyright (C) 19yy  &lt;name of author&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    This program is free software; you can redistribute it and/or
+modify</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    it under the terms of the GNU General Public License as
+published by</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    the Free Software Foundation; either version 2 of the License,
+or</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    (at your option) any later version.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    This program is distributed in the hope that it will be
+useful,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    GNU General Public License for more details.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    You should have received a copy of the GNU General Public
+License</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    along with this program; if not, write to the Free Software</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Also add information on how to contact you by electronic and paper
+mail.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>If the program is interactive, make it output a short notice like
+this</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>when it starts in an interactive mode:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    Gnomovision version 69, Copyright (C) 19yy name of author</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details
+type `show w'.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    This is free software, and you are welcome to redistribute it</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>    under certain conditions; type `show c' for details.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>The hypothetical commands `show w' and `show c' should show the
+appropriate</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>parts of the General Public License.  Of course, the commands you
+use may</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>be called something other than `show w' and `show c'; they could
+even be</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>mouse-clicks or menu items--whatever suits your program.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>You should also get your employer (if you work as a programmer) or
+your</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>school, if any, to sign a &quot;copyright disclaimer&quot; for the
+program, if</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>necessary.  Here is a sample; alter the names:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  Yoyodyne, Inc., hereby disclaims all copyright interest in the
+program</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  `Gnomovision' (which makes passes at compilers) written by James
+Hacker.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  &lt;signature of Ty Coon&gt;, 1 April 1989</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>  Ty Coon, President of Vice</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>This General Public License does not permit incorporating your
+program into</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>proprietary programs.  If your program is a subroutine library,
+you may</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>consider it more useful to permit linking proprietary applications
+with the</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>library.  If this is what you want to do, use the GNU Library
+General</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+color:white'>Public License instead of this License.</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_MAIN           HTML                    "res\\Справочная система программы.htm"
+IDR_HTML_SEL_SOZDANIYA  HTML                    "res\\Цель создания программы.htm"
+IDR_HTML_CHEM_OTLICHAYETCYA HTML                    "res\\Чем отличается программа от других аналогичных программ.htm"
+IDR_HTML_LICENSE        HTML                    "res\\Лицензии.htm"
+IDR_HTML_LICENSE_ZLIB   HTML                    "res\\Лицензии_Zlib.htm"
+IDR_HTML_LICENSE_UNRAR  HTML                    "res\\Лицензии_Unrar.htm"
+IDR_HTML_LICENSE_PNG    HTML                    "res\\Лицензии_Png.htm"
+IDR_HTML_LICENSE_MS     HTML                    "res\\Лицензии_Microsoft.htm"
+IDR_HTML_LICENSE_JPG    HTML                    "res\\Лицензии_Jpg.htm"
+IDR_HTML_LICENSE_CHM    HTML                    "res\\Лицензии_CHMLib.htm"
+IDR_HTML_LICENSE_7ZIP   HTML                    "res\\Лицензии_7-Zip.htm"
+#ifdef _WIN64
+IDR_HTML_KRATKAYA_INFO HTML                     "res\\Краткая информация о содержании текущей версии программы.htm"
+#else
+IDR_HTML_KRATKAYA_INFO HTML                     "res\\Краткая информация о содержании текущей версии программы64.htm"
+#endif
+IDR_HTML_LICENSE_UDEFRAG HTML                    "res\\Лицензии_ultradefrag.htm"
+IDR_HTML_GNU_LICENSE    HTML                    "res\\Лицензии_GNU_General_Public_License.htm"
+IDR_HTML_LICENSE_WINPCAP HTML                    "res\\Лицензии_WinPCap.htm"
+IDR_HTML_LICENSE_SINO   HTML                    "res\\Лицензии_Sino.htm"
+IDR_HTML_LICENSE_GIF    HTML                    "res\\Лицензии_Gif.htm"
+IDR_HTML_LICENSE_NOTEPAD HTML                   "res\\Лицензии_notepad.htm"
+IDR_HTML_HOT_KEYS       HTML                    "res\\Hot_keys.htm"
+IDR_HTML_CHANGE_HOT_KEYS HTML                   "res\\Changing_hot_keys.htm"
+IDR_HTML_FILE_ASSOCIATIONS HTML			"res\\File_associations.htm"
+IDR_HTML_VIEW_FILES HTML			"res\\Viewing_of_the_files.htm"				
+IDR_HTML_QUICK_VIEW_FILES HTML		"res\\Quick_viewing_of_the_files.htm"				
+IDR_HTML_GUID_FOLDERS HTML			"res\\GUID_folders.htm"
+IDR_HTML_CONNECT_VIA_TCP_IP HTML			"res\\Direct_connect_via_TCP_IP.htm"
+IDR_HTML_IP4_ADAPTER_SCANER HTML			"res\\IP4_Adapter_scaner.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SinoHlp32.ico"
+IDI_ICON_BOOK           ICON                    "res\\Icon_2.ico"
+IDI_ICON_QUEST          ICON                    "res\\Icon_10.ico"
+IDI_ICON_PAPER          ICON                    "res\\Icon_9.ico"
+IDI_ICON_OPEN_BOOK      ICON                    "res\\icon1.ico"
+IDR_SINOHLP32TYPE       ICON                    "res\\SinoHlp32Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_FIND_TEXT DIALOGEX 0, 0, 212, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_TOPMOST
+CAPTION "Find text in HTML resource:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FIND_TEXT,7,6,198,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Find next",IDOK,102,21,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,21,50,14
+END
+
+IDD_DIALOG_PROGRESS DIALOGEX 0, 0, 267, 36
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Search progress:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,7,21,253,8
+    EDITTEXT        IDC_EDIT_PROGRESS,7,7,253,12,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SinoHlp32"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON_BOOK,IDI_STATIC,14,14,20,20
+    LTEXT           "SinoHlp32, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C)  Sino",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,51,50,14,WS_GROUP
+    LTEXT           "Karaulbazar - 2012",IDC_STATIC,42,38,66,8
+    LTEXT           "Erkin Sattoriy",IDC_STATIC,42,50,66,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_FIND_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_DIALOG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 29
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_JPG1                JPG                     "res\\Vid.jpg"
+IDR_JPG2                JPG                     "res\\Vid1.jpg"
+IDR_JPG3                JPG                     "res\\ChngHotKey.jpg"
+IDR_JPG4                JPG                     "res\\File_associations.jpg"
+IDR_JPG5                JPG                     "res\\Link_via_TCP_IP.jpg"
+IDR_JPG6                JPG                     "res\\IP4_Adapter_scaner.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_CONTENTS
+    BUTTON      ID_INDEX
+    BUTTON      ID_SEARCH
+    SEPARATOR
+    BUTTON      ID_PREV
+    BUTTON      ID_NEXT
+    BUTTON      ID_PREV_STEP
+    BUTTON      ID_NEXT_STEP
+    SEPARATOR
+    BUTTON      ID_FIND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Contents...\tAlt+C",         ID_CONTENTS,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Index\tCtrl+I",              ID_INDEX,MFT_STRING,MFS_ENABLED
+        MENUITEM "Find\tCtrl+F",                ID_FIND,MFT_STRING,MFS_ENABLED
+        MENUITEM "S&earch...\tCtrl+S",          ID_SEARCH,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Print\tCtrl+P",               ID_FILE_PRINT,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Edit",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Copy\tCtrl+C",                IDM_EDIT_COPY,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        MENUITEM "Select all\tCtrl+A",          ID_EDIT_SELECT_ALL,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        MENUITEM "Clear selection\tDel",        ID_EDIT_CLEARSELECTION,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    END
+    POPUP "&View",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About SinoHlp32...",         ID_APP_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_CONTENTS,            VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEARSELECTION, VIRTKEY, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FIND,                VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_INDEX,               VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_NEXT,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_NEXT,        ID_NEXT_STEP,           VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_PREV,                VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_PRIOR,       ID_PREV_STEP,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SEARCH,              VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_EDIT_COPY,          VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_APP_EXIT,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SinoHlp32.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SinoHlp32.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDR_MAINFRAME           "SinoHlp32\n\nSinoHlp32\n\n\nSinoHlp32.Document\nSinoHlp32.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SinoHlp32"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FIND                 "Find text\nFind text"
+    ID_CONTENTS             "Contents\nContents"
+    ID_INDEX                "Index\nIndex"
+    ID_SEARCH               "Search\nSearch"
+    ID_PREV                 "Navigate to previous page\nPrev"
+    ID_NEXT                 "Navigate to next page\nNext"
+    ID_PREV_STEP            "Navigate to previous page in step\nPrevStep"
+    ID_NEXT_STEP            "Navigate to next page in step\nNextStep"
+    IDS_STRING_CONTENTS     "Contents"
+    IDS_STRING_INDEX        "Index"
+    IDS_STRING_SEARCH       "Search"
+    IDS_STRING_PREV         "Previous"
+    IDS_STRING_NEXT         "Next"
+    IDS_STRING_PREV_STEP    "Previous in step"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_NEXT_STEP    "Next in step"
+    IDS_STRING_FIND         "Find text"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_EDIT_COPY           "Copy selection to clipboard\nCopy"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEARSELECTION  "Clear selection\nClear"
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SinoHlp32.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SinoHlp32.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

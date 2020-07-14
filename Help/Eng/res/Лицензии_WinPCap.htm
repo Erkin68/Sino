@@ -1,0 +1,482 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.a
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-link:"Текст выноски";
+	font-family:"Tahoma","sans-serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body bgcolor="#002060" lang=RU>
+
+<div class=Section1>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;Copyright (c) 1999
+- 2005 NetGroup, Politecnico di Torino (Italy).</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Copyright (c) 2005 - 2010
+CACE Technologies, Davis (California).</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>1. Redistributions of
+source code must retain the above copyright notice, this list of conditions and
+the following disclaimer. </span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>2. Redistributions in
+binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials
+provided with the distribution. </span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>3. Neither the name of
+the Politecnico di Torino, CACE Technologies nor the names of its contributors
+may be used to endorse or promote products derived from this software without
+specific prior written permission. </span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS  &quot;AS IS&quot; AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>This product includes
+software developed by the University of California, Lawrence Berkeley
+Laboratory and its contributors. </span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>This product includes
+software developed by the Kungliga Tekniska Hцgskolan and its contributors.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>This product includes
+software developed by Yen Yen Lim and North Dakota State University.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997 The Regents of the University of
+California.  All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>1. Redistributions of
+source code must retain the above copyright notice, this list of conditions and
+the following disclaimer.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>2. Redistributions in
+binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials
+provided with the distribution.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>3. All advertising
+materials mentioning features or use of this software must display the
+following acknowledgement: &quot;This product includes software developed by
+the University of California, Berkeley and its contributors.&quot;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>4. Neither the name of
+the University nor the names of its contributors may be used to endorse or
+promote products derived from this software without specific prior written
+permission.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+BY THE INSTITUTE AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+1983 Regents of the University of California. All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms are permitted provided that the above copyright notice
+and this paragraph are duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such distribution and use
+acknowledge that the software was developed by the University of California,
+Berkeley.  The name of the University may not be used to endorse or promote
+products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY
+AND FITNESS FOR A PARTICULAR PURPOSE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+1995, 1996, 1997 Kungliga Tekniska Hцgskolan (Royal Institute of Technology,
+Stockholm, Sweden). All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>1. Redistributions of
+source code must retain the above copyright notice, this list of conditions and
+the following disclaimer.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>2. Redistributions in
+binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials
+provided with the distribution.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>3. All advertising
+materials mentioning features or use of this software must display the
+following acknowledgement: &quot;This product includes software developed by
+the Kungliga Tekniska Hцgskolan and its contributors.&quot;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>4. Neither the name of
+the University nor the names of its contributors may be used to endorse or
+promote products derived from this software without specific prior written
+permission.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+BY THE INSTITUTE AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+1997 Yen Yen Lim and North Dakota State University. All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>1. Redistributions of
+source code must retain the above copyright notice, this list of conditions and
+the following disclaimer.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>2. Redistributions in
+binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials
+provided with the distribution.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>3. All advertising
+materials mentioning features or use of this software must display the
+following acknowledgement: &quot;This product includes software developed by
+Yen Yen Lim and North Dakota State University&quot;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>4. The name of the author
+may not be used to endorse or promote products derived from this software
+without specific prior written permission.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+1993 by Digital Equipment Corporation.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Permission to use, copy,
+modify, and distribute this software for any purpose with or without fee is
+hereby granted, provided that the above copyright notice and this permission
+notice appear in all copies, and that the name of Digital Equipment Corporation
+not be used in advertising or publicity pertaining to distribution of the
+document or software without specific, written prior permission.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THE SOFTWARE IS PROVIDED
+&quot;AS IS&quot; AND DIGITAL EQUIPMENT CORP. DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS.   IN NO EVENT SHALL DIGITAL EQUIPMENT CORPORATION BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
+WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (C)
+1995, 1996, 1997, 1998, and 1999 WIDE Project. All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>1. Redistributions of
+source code must retain the above copyright notice, this list of conditions and
+the following disclaimer.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>2. Redistributions in
+binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials
+provided with the distribution.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>3. Neither the name of
+the project nor the names of its contributors may be used to endorse or promote
+products derived from this software without specific prior written permission.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+BY THE PROJECT AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+EVENT SHALL THE PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+1996 Juniper Networks, Inc.  All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that: (1) source code distributions retain the above copyright notice and this
+paragraph in its entirety, (2) distributions including binary code include the
+above copyright notice and this paragraph in its entirety in the documentation
+or other materials provided with the distribution.  The name of Juniper
+Networks may not be used to endorse or promote products derived from this
+software without specific prior written permission.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT
+LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright (c)
+2001 Daniel Hartmeier All rights reserved.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Redistribution and use in
+source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>- Redistributions of
+source code must retain the above copyright notice, this list of conditions and
+the following disclaimer. </span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>- Redistributions in
+binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials
+provided with the distribution. </span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>THIS SOFTWARE IS PROVIDED
+BY THE COPYRIGHT HOLDERS AND CONTRIBUTOR &quot;AS IS&quot; AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>------------------------------------------</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Portions Copyright 1989
+by Carnegie Mellon.</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>&nbsp;</span></font></p>
+
+<p class=MsoNormal><font size=3 color=white face=Calibri><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;color:white'>Permission to use, copy,
+modify, and distribute this program for any purpose and without fee is hereby
+granted, provided that this copyright and permission notice appear on all
+copies and supporting documentation, the name of Carnegie Mellon not be used in
+advertising or publicity pertaining to distribution of the program without
+specific prior permission, and notice be given in supporting documentation that
+copying and distribution is by permission of Carnegie Mellon and Stanford
+University.  Carnegie Mellon makes no representations about the suitability of
+this software for any purpose.  It is provided &quot;as is&quot; without
+express or implied warranty.</span></font></p>
+
+</div>
+
+</body>
+
+</html>
