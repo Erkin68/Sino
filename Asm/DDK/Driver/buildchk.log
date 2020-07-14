@@ -1,0 +1,18 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining d:\docs archive\erkin\savar\auxilary\sino\asm\ddk\driver directory for files to compile.
+Compiling d:\docs archive\erkin\savar\auxilary\sino\asm\ddk\driver directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 NOPASS0=1 386=1'
+	jvc /nologo /cp D:\WINDDK\2600\public\sdk\classes\afc.zip;D:\WINDDK\2600\public\sdk\classes\classes.zip;D:\DocsArchive\Erkin\Savar\Auxilary\Sino\Asm\DDK\Driver; /g /w4 /d objchk\i386 
+"jvc" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+	jvc /nologo /cp D:\WINDDK\2600\public\sdk\classes\afc.zip;D:\WINDDK\2600\public\sdk\classes\classes.zip;D:\DocsArchive\Erkin\Savar\Auxilary\Sino\Asm\DDK\Driver; /g /w4 /d objchk\i386 
+"jvc" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+Linking d:\docs archive\erkin\savar\auxilary\sino\asm\ddk\driver directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i LINKONLY=1 NOPASS0=1 NTTEST= UMTEST= 386=1'
+	jvc /nologo /cp D:\WINDDK\2600\public\sdk\classes\afc.zip;D:\WINDDK\2600\public\sdk\classes\classes.zip;D:\DocsArchive\Erkin\Savar\Auxilary\Sino\Asm\DDK\Driver; /g /w4 /d objchk\i386 
+"jvc" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+	jvc /nologo /cp D:\WINDDK\2600\public\sdk\classes\afc.zip;D:\WINDDK\2600\public\sdk\classes\classes.zip;D:\DocsArchive\Erkin\Savar\Auxilary\Sino\Asm\DDK\Driver; /g /w4 /d objchk\i386 
+"jvc" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.

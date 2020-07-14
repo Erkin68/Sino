@@ -1,0 +1,19 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining d:\savar\auxilary\sino\asm\ddk\driver directory for files to compile.
+Compiling d:\savar\auxilary\sino\asm\ddk\driver directory ********************
+'nmake.exe /c BUILDMSG=Stop. -i NTTEST= UMTEST= NOLINK=1 NOPASS0=1 386=1'
+1>cl -nologo -Ii386\ -I. -Iobjfre\i386 -ID:\WINDDK\2600\inc\wxp -ID:\WINDDK\2600\inc\wxp -ID:\WINDDK\2600\inc\ddk\wxp -ID:\WINDDK\2600\inc\ddk\wdm\wxp -ID:\WINDDK\2600\inc\crt -D_X86_=1 -Di386=1  -DSTD_CALL -DCONDITION_HANDLING=1   -DNT_INST=0 -DWIN32=100 -D_NT1X_=100 -DWINNT=1 -D_WIN32_WINNT=0x0501 /DWINVER=0x0501 -D_WIN32_IE=0x0600    -DWIN32_LEAN_AND_MEAN=1 -DDEVL=1 -D__BUILDMACHINE__=WinDDK -DFPO=1  -DNDEBUG -D_DLL=1      /c /Zel /Zp8 /Gy -cbstring /W3 /WX /Gz  /QIfdiv- /QIf /G6 /Gi- /Gm- /GX-  /GR- /GF  -Z7 /Oxs /Oy   -FID:\WINDDK\2600\inc\wxp\warning.h   .\driver.c
+1>driver.c
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(239) : error C4013: 'ZwQueryDirectoryFile' undefined; assuming extern returning int
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(247) : error C2143: syntax error : missing ';' before '=='
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(252) : error C2059: syntax error : 'if'
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(258) : error C2065: 'Buffer' : undeclared identifier
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(258) : error C2099: initializer is not a constant
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(260) : error C2059: syntax error : 'while'
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(279) : warning C4142: benign redefinition of type
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(279) : warning C4273: 'ZwClose' : inconsistent dll linkage
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(280) : error C2059: syntax error : 'return'
+1>d:\Savar\Auxilary\Sino\Asm\DDK\Driver\driver.c(281) : error C2059: syntax error : '}'
+1>
+1>Stop.
+Compile errors: not linking d:\savar\auxilary\sino\asm\ddk\driver directory ********************
