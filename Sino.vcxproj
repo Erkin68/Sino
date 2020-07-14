@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E81D884-D01F-492C-A32D-4218C125AA7B}</ProjectGuid>
+    <RootNamespace>Sino</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SinoDbg.exe</TargetName>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Savar\Include;D:\Savar\Auxilary\Sino\Plugins\Archive\7z\7z_src\CPP;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Include</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Savar\Include;D:\Savar\Auxilary\Sino\Plugins\Archive\7z\7z_src\CPP;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <ShowProgress>true</ShowProgress>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;d3d9.lib;d3dx9.lib;SinoLibDbg.lib;Msimg32.lib;shlwapi.lib;Ws2_32.lib;Version.lib;LinkSockDbg.lib;LanguageDbg.lib;CopyRNMDbg.lib;SlctnSrchDbg.lib;KrnlAndStrmsDbg.lib;DrgAndDrpDbg.lib;VrtPnlDbg.lib;Psapi.lib;MnuUtDbg.lib;HtmlHelp.lib;gdiplus.lib;Bin\MyShell.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin\$(ProjectName)Dbg.exe</OutputFile>
+      <ManifestFile>
+      </ManifestFile>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AllowIsolation>true</AllowIsolation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/VERBOSE:LIB  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>comctl32.lib;d3d9.lib;d3dx9.lib;SinoLibRel.lib;Msimg32.lib;shlwapi.lib;Ws2_32.lib;Version.lib;LinkSockRel.lib;LanguageRel.lib;CopyRNMRel.lib;SlctnSrchRel.lib;KrnlAndStrmsRel.lib;DrgAndDrpRel.lib;Psapi.lib;MnuUtRel.lib;VrtPnlRel.lib;HtmlHelp.lib;Bin\MyShell.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin\$(ProjectName).exe</OutputFile>
+      <ManifestFile>
+      </ManifestFile>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AllowIsolation>false</AllowIsolation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonControls.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="DiskToolbar.cpp" />
+    <ClCompile Include="EntryStep.cpp" />
+    <ClCompile Include="FileAssociation.cpp" />
+    <ClCompile Include="FillManager.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="MyShell.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="Panel_FrSelMenu.cpp" />
+    <ClCompile Include="PanelItem.cpp" />
+    <ClCompile Include="PanelSort.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="ResizeBar.cpp" />
+    <ClCompile Include="SheetTab.cpp" />
+    <ClCompile Include="Sino.cpp" />
+    <ClCompile Include="Toolcha.cpp" />
+    <ClCompile Include="WindowsManagmentInstrumentation.cpp" />
+    <ClCompile Include="Operations\AccessNeed.cpp" />
+    <ClCompile Include="Operations\ButtonsPanel.cpp" />
+    <ClCompile Include="Operations\ComboToDisk.cpp" />
+    <ClCompile Include="Operations\CopyOperation.cpp" />
+    <ClCompile Include="Operations\CreateFolder.cpp" />
+    <ClCompile Include="Operations\DeleteOperation.cpp" />
+    <ClCompile Include="Operations\Execution.cpp" />
+    <ClCompile Include="Operations\FilesToCBEdit.cpp" />
+    <ClCompile Include="Operations\FoldersSizes.cpp" />
+    <ClCompile Include="Operations\MyErrors.cpp" />
+    <ClCompile Include="Operations\MyShell\MyShellAdv.c" />
+    <ClCompile Include="Operations\Temporary.cpp" />
+    <ClCompile Include="Asm\MstrCmpNN_C.cpp" />
+    <ClCompile Include="Plugins\Archive\Archive.cpp" />
+    <ClCompile Include="Plugins\Archive\ArchiveClass.cpp" />
+    <ClCompile Include="Plugins\Archive\ArchiveCopy.cpp" />
+    <ClCompile Include="Plugins\Archive\ArjToArj.cpp" />
+    <ClCompile Include="Plugins\Image\Image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DiskToolbar.h" />
+    <ClInclude Include="EntryStep.h" />
+    <ClInclude Include="FileAssociation.h" />
+    <ClInclude Include="FillManager.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="MyCommonControls.h" />
+    <ClInclude Include="Panel.h" />
+    <ClInclude Include="Profiler.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="ResizeBar.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SheetTab.h" />
+    <ClInclude Include="Sino.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Toolcha.h" />
+    <ClInclude Include="WindowsManagmentInstrumentation.h" />
+    <ClInclude Include="Operations\ButtonsPanel.h" />
+    <ClInclude Include="Operations\ComboToDisk.h" />
+    <ClInclude Include="Operations\CopyOperation.h" />
+    <ClInclude Include="Operations\CreateFolder.h" />
+    <ClInclude Include="Operations\DeleteOperation.h" />
+    <ClInclude Include="Operations\Execution.h" />
+    <ClInclude Include="Operations\FilesToCBEdit.h" />
+    <ClInclude Include="Operations\FolderSize.h" />
+    <ClInclude Include="Operations\MyErrors.h" />
+    <ClInclude Include="Operations\Temporary.h" />
+    <ClInclude Include="Asm\MyStrCmpNN_SSE.h" />
+    <ClInclude Include="Plugins\Archive\Archive.h" />
+    <ClInclude Include="Plugins\Image\Image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\aero_unavail - копия.cur" />
+    <None Include="Res\aero_unavail.cur" />
+    <None Include="Res\aero_unavail_l - копия.cur" />
+    <None Include="Res\aero_unavail_l.cur" />
+    <None Include="Res\aero_unavail_xl - копия.cur" />
+    <None Include="Res\aero_unavail_xl.cur" />
+    <None Include="Res\bitmap1.bmp" />
+    <None Include="Res\bitmapCD.bmp" />
+    <None Include="Res\bitmapDisk.bmp" />
+    <None Include="Res\bitmapFDD.bmp" />
+    <None Include="Res\bitmapNetworkDisk.bmp" />
+    <None Include="Res\bitmapRAMDisk.bmp" />
+    <None Include="Res\bitmapRemovableDisk.bmp" />
+    <None Include="Res\bitmapUSB.bmp" />
+    <None Include="Res\cur00001 - копия.cur" />
+    <None Include="Res\cur00001.cur" />
+    <None Include="Res\cursor1.cur" />
+    <None Include="Res\cursor2.cur" />
+    <None Include="Res\Cursor_3 - копия.cur" />
+    <None Include="Res\Cursor_3.cur" />
+    <None Include="Res\Cursor_4 - копия.cur" />
+    <None Include="Res\Cursor_4.cur" />
+    <None Include="Res\Cursor_8 - копия.cur" />
+    <None Include="Res\Cursor_8.cur" />
+    <None Include="Res\Cursor_9.cur" />
+    <None Include="Res\icon1.ico" />
+    <None Include="Res\Icon_181.ico" />
+    <None Include="Res\Icon_191.ico" />
+    <None Include="Res\Icon_259.ico" />
+    <None Include="Res\Icon_27.ico" />
+    <None Include="Res\Icon_8.ico" />
+    <None Include="Res\Icon_file.ico" />
+    <None Include="Res\Icon_folder.ico" />
+    <None Include="Res\Icon_folder2.ico" />
+    <None Include="Res\Icon_folder_access.ico" />
+    <None Include="Res\Icon_UpArrow.ico" />
+    <None Include="nodrop.cur" />
+    <None Include="Res\Replace.bmp" />
+    <None Include="Sino.bmp" />
+    <None Include="Sino.ico" />
+    <None Include="Sino16.bmp" />
+    <None Include="Sino36.bmp" />
+    <None Include="small.ico" />
+    <ResourceCompile Include="Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Sino.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Asm\MyStrCmpNN_SSE.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

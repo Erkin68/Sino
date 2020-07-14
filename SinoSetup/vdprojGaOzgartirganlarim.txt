@@ -1,0 +1,5 @@
+1 NetFramework ni so'rayatgandi, requwere sidan topib o'chirib tashladim;  
+
+
+custum action ga  [TARGETDIR]
+ 
